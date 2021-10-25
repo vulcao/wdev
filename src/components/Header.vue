@@ -1,22 +1,18 @@
 <template>
     <header>
         <nav class="container">
-            <a href="/"><img alt="WDEV" id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg
-"/></a>
-            <img alt="Abrir menu" id="menu-button" v-on:click="openMenu" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg
-"/> 
+            <router-link to="/"><img alt="WDEV" id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg"/></router-link>
+            <img alt="Abrir menu" id="menu-button" v-on:click="openMenu" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg"/> 
         
             <div id="menu-overlay" v-if="menuActive" v-on:click="closeMenu"></div>
 
             <div id="menu-itens" :class="{active:menuActive}">
-                <img alt="WDEV" id="menu-logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg
-"/>
+                <img alt="WDEV" id="menu-logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg"/>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/videos">Videos</a></li>
-                    <li><a href="/sobre">Sobre</a></li>
-                    <li><a href="/contato">Contato</a></li>
-                    <li><a href="/contato">wendel</a></li>
+                    <li v-on:click="closeMenu"><router-link to="/">Home</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/videos">Videos</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/sobre">Sobre</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/contato">Contato</router-link></li>
                 </ul>
             </div>
         </nav>
