@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav class="container">
-            <router-link to="/"><img alt="WDEV" id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg"/></router-link>
+            <router-link to="/teste/"><img alt="WDEV" id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg"/></router-link>
             <img alt="Abrir menu" id="menu-button" v-on:click="openMenu" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg"/> 
         
             <div id="menu-overlay" v-if="menuActive" v-on:click="closeMenu"></div>
@@ -9,10 +9,10 @@
             <div id="menu-itens" :class="{active:menuActive}">
                 <img alt="WDEV" id="menu-logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg"/>
                 <ul>
-                    <li v-on:click="closeMenu"><router-link to="/">Home</router-link></li>
-                    <li v-on:click="closeMenu"><router-link to="/videos">Videos</router-link></li>
-                    <li v-on:click="closeMenu"><router-link to="/sobre">Sobre</router-link></li>
-                    <li v-on:click="closeMenu"><router-link to="/contato">Contato</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/teste/">Home</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/teste/videos">Videos</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/teste/sobre">Sobre</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/teste/contato">Contato</router-link></li>
                 </ul>
             </div>
         </nav>

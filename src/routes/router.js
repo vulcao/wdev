@@ -10,19 +10,19 @@ import Contato from '@/pages/Contato';
 
 const routes = [
     {
-        path:'/',
+        path:'/teste/',
         component: Home
     },
     {
-        path:'/videos',
+        path:'/teste/videos',
         component: Videos
     },
     {
-        path:'/sobre',
+        path:'/teste/sobre',
         component: Sobre
     },
     {
-        path:'/contato',
+        path:'/teste/contato',
         component: Contato
     },
 ];
