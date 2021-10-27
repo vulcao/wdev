@@ -13,6 +13,7 @@
                     <li v-on:click="closeMenu"><router-link to="/teste/videos">Videos</router-link></li>
                     <li v-on:click="closeMenu"><router-link to="/teste/sobre">Sobre</router-link></li>
                     <li v-on:click="closeMenu"><router-link to="/teste/contato">Contato</router-link></li>
+                    <li v-on:click="closeMenu"><router-link to="/teste/testeapi">Teste API</router-link></li>
                 </ul>
             </div>
         </nav>

@@ -7,6 +7,7 @@ import Home from '@/pages/Home';
 import Videos from '@/pages/Videos';
 import Sobre from '@/pages/Sobre';
 import Contato from '@/pages/Contato';
+import Testeapi from '@/pages/Testeapi';
 
 const routes = [
     {
@@ -24,6 +25,10 @@ const routes = [
     {
         path:'/teste/contato',
         component: Contato
+    },
+    {
+        path:'/teste/testeapi',
+        component: Testeapi
     },
 ];
 
